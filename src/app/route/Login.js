@@ -7,7 +7,7 @@ let router = express.Router();
 const loginRouter = (app) => {
     router.post("/account", loginCtrl.handleLogin)
 
-    return app.use('/',router)
+    return app.use('/api/',router)
 }
 
 
