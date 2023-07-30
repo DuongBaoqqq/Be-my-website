@@ -1,6 +1,5 @@
 import express from 'express'
 import 'dotenv/config'
-import { getUser } from './app/controller/loginController.js'
 import bodyParser from 'body-parser'
 import cors from 'cors'
 import morgan from 'morgan'
@@ -8,7 +7,7 @@ import loginRouter from "./app/route/Login.js"
 import productRoute from "./app/route/productRoute"
 
 const app = express()
-const port = process.env.PORT 
+const port = process.env.PORT || 3000
 
 app.use(bodyParser.json())
 app.use(cors())

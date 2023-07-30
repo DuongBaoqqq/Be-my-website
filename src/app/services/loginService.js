@@ -21,11 +21,8 @@ const handleLogin = async (email, password) => {
     }
     else {
         if (account.passWord === password) {
-            // const data = new User();
-            // data = account
-            // console.log(data);
-            console.log(account);
             const user = {
+                id: account.id,
                 email: account.email,
                 role: account.Role.role,
                 firstName : account.firstName,
